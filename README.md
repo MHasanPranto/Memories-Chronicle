@@ -50,7 +50,7 @@
 [![website-screenshot]]
 
 The Memories Chronicel project is a ready website project to launch for any event planning company.
-Objectives:
+## Objectives:
 
  * Enable Stability by monitoring all events that occurs throughout the IT infrastructure to allow for normal service operations and detect and escalate exceptions.
  * To make an event planner hiring process easier for all.
