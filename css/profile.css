@@ -1,0 +1,185 @@
+.profile {
+  /* background: #0a0a0a; */
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.profile a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.card {
+  top: 70px;
+  width: 350px;
+  /* height: 400px; */
+  border-radius: 30px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 3;
+  box-shadow: 10px 10px 70px rgba(0, 0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.card .profile-pic {
+  display: flex;
+  justify-self: center;
+  top: -80px;
+  left: 70px;
+  position: relative;
+  animation: animate 3s ease-in-out infinite;
+}
+
+.card .profile-pic img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid aqua;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0, 0.4);
+}
+
+.card .name {
+  top: 5px;
+  position: relative;
+}
+
+.card .name h2,
+.card .name p {
+  text-align: center;
+}
+
+.card .name h2 {
+  color: #1f28c7;
+}
+
+.card .name p {
+  margin: 5px 0px;
+}
+
+.card .button {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.card .button button {
+  padding: 10px 35px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  background: none;
+  color: #fff;
+  font-weight: 500;
+  /* cursor: pointer; */
+  transition: all 0.2s;
+  position: relative;
+}
+
+.card .button button:hover {
+  background: white;
+  color: #5159e7;
+}
+
+.card .info {
+  display: flex;
+  justify-content: space-around;
+  margin: 35px 0px;
+}
+
+.card .info h4 {
+  color: aqua;
+  font-weight: 600;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card .info p {
+  text-align: center;
+  font-weight: 400;
+  padding: 4px 15px;
+  color: aqua;
+}
+
+.card .more button {
+  padding: 15px 40px;
+  border: 1.3px solid #5159e7;
+  border-radius: 30px;
+  background: #1f28c7;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  /* cursor: pointer; */
+  border: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .more button:hover {
+  background: rgb(117, 207, 117);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.circle1,
+.circle2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10%;
+}
+
+.circle1 {
+  top: 140px;
+  left: 450px;
+  background: #fac5b4;
+  clip-path: polygon(
+    0 0,
+    14% 0,
+    50% 80%,
+    86% 0,
+    100% 0,
+    100% 100%,
+    90% 100%,
+    90% 16%,
+    50% 100%,
+    10% 16%,
+    10% 100%,
+    0 100%
+  );
+}
+
+.circle2 {
+  top: 400px;
+  right: 450px;
+  background: #789382;
+  clip-path: polygon(
+    0 0,
+    100% 1%,
+    100% 15%,
+    100% 40%,
+    85% 15%,
+    15% 15%,
+    15% 85%,
+    85% 85%,
+    100% 60%,
+    100% 81%,
+    100% 100%,
+    0 100%
+  );
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

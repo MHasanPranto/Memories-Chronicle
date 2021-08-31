@@ -1,0 +1,192 @@
+/* ***************************************************** admin table er css suru ********************************** */
+.table {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+table.neumorphic {
+  width: 600px;
+  border-spacing: 0;
+  color: #212121;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+table.neumorphic thead {
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6);
+}
+table.neumorphic th {
+  padding: 7px;
+}
+
+table.neumorphic > tbody > tr > td {
+  padding: 10px;
+  font-size: 14px;
+  position: relative;
+}
+
+table.neumorphic > tbody > tr:hover {
+  padding: 20px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+
+table.neumorphic tr td:first-child::before {
+  content: '';
+  position: absolute;
+  padding: 7px;
+  top: 0;
+  left: -5000px;
+  width: 10000px;
+  height: 100%;
+  z-index: -10;
+}
+/* 
+table.neumorphic td:hover::after {
+  content: '';
+  position: absolute;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+} */
+.table button {
+  border: none;
+  background: transparent;
+}
+.add-btn {
+  padding: 10px 30px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 10px;
+  /* background: #f3f4f6; */
+  /* box-shadow: 20px 20px 60px #cfcfd1, -20px -20px 60px #ffffff; */
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+.add-btn:hover {
+  background: linear-gradient(
+    145deg,
+    rgba(163, 177, 198, 0.6),
+    rgba(255, 255, 255, 0.6)
+  );
+  color: #5ab9ea;
+
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+.table i.fas {
+  padding: 5px;
+  font-size: 17px;
+}
+i.fas:nth-child(1):hover {
+  color: crimson;
+}
+i.fas:nth-child(2):hover {
+  color: #5ab9ea;
+}
+/* ***************************************************** admin table er css ses ********************************** */
+/* ***************************************************** admin edit er css suru ********************************** */
+.form-body {
+  margin: 0;
+  height: 80vh;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+.form-div {
+  width: 430px;
+
+  padding: 30px 30px;
+  border-radius: 40px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+
+  letter-spacing: 0.5px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 7px;
+  letter-spacing: 3px;
+}
+
+.fields {
+  width: 100%;
+  padding: 20px 5px 5px 5px;
+}
+
+.fields input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 10px;
+  color: #555;
+  padding: 15px;
+}
+
+.name,
+.email,
+.username,
+.field,
+.password {
+  margin-bottom: 25px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.signin-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 55px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  background: linear-gradient(to right, #86d0f5, #5ab9ea);
+  box-shadow: -6px -6px 6px #ffffff85, 6px 6px 6px #808080;
+
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.signin-button::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 10px;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(30deg);
+  filter: blur(10px);
+  opacity: 0.5;
+  transition: 0.5s ease-out;
+}
+
+.signin-button:hover::after {
+  transform: translateX(350px) rotate(30deg);
+}
+
+/* ***************************************************** admin edit er css ses ********************************** */

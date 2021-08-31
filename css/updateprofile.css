@@ -1,0 +1,226 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  cursor: none;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body,
+html {
+  min-height: 100vh;
+  /* background: #666; */
+  background-color: #485461;
+  background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+}
+.table {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 3;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal {
+  width: 420px;
+  height: 540px;
+  margin: 0 auto;
+  /* background: #fff;
+  box-shadow: 0 40px 50px rgba(0, 0, 0, 0.35); */
+  background: rgba(72, 84, 97, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 40px;
+}
+#mediaFile {
+  position: absolute;
+  top: -1000px;
+}
+#profile {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: -120px;
+  margin-bottom: -120px;
+  /* cursor: pointer; */
+  /* background: #f4f4f4; */
+  display: table;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.35);
+  background: transparent;
+}
+#profile .dashes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  border: 4px dashed rgb(117, 207, 117);
+  opacity: 1;
+}
+#profile label {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 30px;
+  /* color: grey; */
+  color: rgb(117, 207, 117);
+  opacity: 1;
+}
+#profile.dragging {
+  background-image: none !important;
+}
+#profile.dragging .dashes {
+  animation-duration: 10s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 1 !important;
+}
+#profile.dragging label {
+  opacity: 0.5 !important;
+}
+#profile.hasImage .dashes,
+#profile.hasImage label {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+/* .stat {
+    width: 50%;
+    text-align: center;
+    float: left;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+.stat 
+.stat .num {
+    font-size: 21px;
+    padding: 3px 0;
+}*/
+.label {
+  font-size: 11px;
+  color: #5159e7;
+  /* font-weight: bold; */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 5px 14px;
+}
+.editable {
+  position: relative;
+}
+.editable i {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  opacity: 0.3;
+}
+input.w3-input.w3-animate-input {
+  background: transparent;
+  color: rgb(117, 207, 117);
+  transition: 0.5s;
+}
+input.w3-input.w3-animate-input:focus {
+  background: rgba(255, 255, 255, 0.651);
+  color: rgb(0, 0, 0);
+}
+button {
+  width: 100% !important;
+  -webkit-appearance: none !important;
+  line-height: 40px !important;
+  color: #fff !important;
+  border: none !important;
+  background-color: rgb(117, 207, 117) !important;
+  margin-top: 20px !important;
+  font-size: 13px !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-weight: bold !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  border-radius: 30px !important;
+  transition: 0.5s !important;
+}
+button:hover {
+  background-color: #5159e7 !important;
+}
+button a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.circle1,
+.circle2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10%;
+}
+
+.circle1 {
+  top: 140px;
+  left: 450px;
+  background: #fac5b4;
+  clip-path: polygon(
+    0 0,
+    14% 0,
+    50% 80%,
+    86% 0,
+    100% 0,
+    100% 100%,
+    90% 100%,
+    90% 16%,
+    50% 100%,
+    10% 16%,
+    10% 100%,
+    0 100%
+  );
+}
+
+.circle2 {
+  top: 400px;
+  right: 450px;
+  background: #789382;
+  clip-path: polygon(
+    0 0,
+    100% 1%,
+    100% 15%,
+    100% 40%,
+    85% 15%,
+    15% 15%,
+    15% 85%,
+    85% 85%,
+    100% 60%,
+    100% 81%,
+    100% 100%,
+    0 100%
+  );
+}

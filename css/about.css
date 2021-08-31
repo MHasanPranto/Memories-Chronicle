@@ -1,0 +1,102 @@
+.about-wrapper {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #f1f1f1; */
+  background: rgb(72, 84, 97);
+  background: linear-gradient(
+    135deg,
+    rgba(72, 84, 97, 1) 0%,
+    rgba(40, 49, 59, 1) 74%
+  );
+}
+.about {
+  background: url(../images/bg.jpg) no-repeat left;
+  background-size: 55%;
+  /* background-color: #fdfdfd; */
+  overflow: hidden;
+  padding: 100px 0;
+}
+.inner-section {
+  width: 55%;
+  float: right;
+  /* background-color: #fdfdfd; */
+  padding: 140px;
+  /* box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3); */
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* font-family: 'EB Garamond', serif; */
+  font-family: 'Playfair Display', serif;
+  color: crimson;
+}
+.inner-section h1 {
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: 400;
+}
+.text {
+  font-size: 15px;
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: 'Playfair Display', serif;
+  /* color: #545454; */
+  color: #fff;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.skills button {
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  width: 200px;
+  background-color: #00999c;
+  color: white;
+  /* cursor: pointer; */
+}
+.skills button a {
+  text-decoration: none;
+  color: inherit;
+}
+.skills button:hover {
+  transition: 1s;
+  background-color: #ecf5f5;
+  color: #00999c;
+}
+@media screen and (max-width: 1200px) {
+  .inner-section {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 0;
+  }
+  .inner-section {
+    padding: 60px;
+  }
+  .skills button {
+    font-size: 19px;
+    padding: 5px;
+    width: 160px;
+  }
+}
