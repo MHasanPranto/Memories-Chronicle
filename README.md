@@ -9,7 +9,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/MHasanPranto/test">
+  <a href="https://github.com/MHasanPranto/Memories-Chronicle">
     <img src="./logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -47,7 +47,7 @@
 
 ## About The Project
 
-[![website-screenshot]]
+![website-screenshot]
 
 The Memories Chronicel project is a ready website project to launch for any event planning company.
 ## Objectives:
