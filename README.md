@@ -119,7 +119,7 @@ This is the list of software u need.
 
 Use this project to inhance your skill. Adding new thing to this project can make this amaizing.
 
-_For more about the project, please refer to the [Documentation](projectreport.pdf)_
+_For more about the project, please refer to the [Documentation](https://drive.google.com/file/d/1DH1VQevxy9yHPPUkajDlRPPQh-N_riUK/view?ths=true)_
 
 
 ## Contributing
